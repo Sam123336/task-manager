@@ -14,11 +14,12 @@ pipeline {
             }
         }
 
-        stage('Build Docker Images') {
-            steps {
-                sh 'docker compose build'
-            }
-        }
+       stage('Build Docker Images') {
+    steps {
+        sh 'docker compose -f api/docker-compose.yml build'
+    }
+}
+
 
         stage('Start Containers') {
             steps {
