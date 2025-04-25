@@ -6,9 +6,11 @@ pipeline {
     }
 
     stages {
-        stage('Checkout Code') {
+
+        stage('Checkout') {
             steps {
-                git 'https://github.com/Sam123336/task-manager.git'
+                // Check out the repository from GitHub
+                git branch: 'main', url: 'https://github.com/jimmyptl-jer/Blog-Application.git'
             }
         }
 
