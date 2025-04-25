@@ -6,7 +6,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Check out the repository from GitHub
-                git branch: 'main', url: 'https://github.com/jimmyptl-jer/Blog-Application.git'
+                git branch: 'main', url: 'https://github.com/Sam123336/task-manager.git'
             }
         }
 
